@@ -1,13 +1,14 @@
-# Preventive Healthcare System
+# A Mental Health Companion App Using AI-Powered Journaling and Mood Tracking
 
-This project is an **AI-powered Predictive Healthcare System** that helps identify individuals at risk of developing chronic diseases such as **diabetes, heart disease, or obesity**. The system provides personalized recommendations for preventive care based on lifestyle and medical data.
+Mental health is increasingly recognized as a critical aspect of overall well-being, yet access to mental health services remains limited, especially for young adults, students, and people in rural areas. MindWell is a mobile-first application designed to help users manage their mental health daily through AI-supported journaling, personalized mood tracking, and emotional insight generation. The app is designed to be both a therapeutic companion and a data-driven tool to help users understand emotional patterns over time.
 
 ## Features
-- AI-based health risk prediction for **diabetes**, **heart disease**, and **obesity**.
-- User-friendly form for inputting health and lifestyle data.
-- Displays risk probabilities and provides feedback on how to manage risks.
-- Uses pre-trained machine learning models to assess the risk levels.
-- Integrated with **Streamlit** for interactive web-based applications.
+- Daily AI-Powered Journaling: Users write journal entries in natural language. The AI summarizes key emotional themes, classifies mood, and highlights stress or positivity indicators
+- Mood Tracking Dashboard: Users can select their mood each day, which is tracked on a calendar and shown in weekly or monthly views for trends.
+- Emotion Analysis: Based on user input, the AI can suggest helpful coping strategies, mindfulness exercises, or just encouraging messages.
+- Privacy-Focused: All data will be stored locally or encrypted, giving the user control over their mental health data.
+- Optional Reminders and Prompts: Daily check-ins and writing prompts to encourage consistent self-care.
+
 
 ## Prerequisites
 
@@ -38,9 +39,9 @@ cd AI-Powered-Preventive-Healthcare-System
 
 Make sure to have the pre-trained model files:
 - `label_encoders.pkl`
-- `lr_dt.pkl` (Logistic Regression model for Diabetes)
-- `lr_ht.pkl` (Logistic Regression model for Heart Disease)
-- `lr_ob.pkl` (Logistic Regression model for Obesity)
+- `lr_dt.pkl` (Logistic Regression model for academic and social pressures)
+- `lr_ht.pkl` (Logistic Regression model for understanding emotions)
+- `lr_ob.pkl` (Logistic Regression model for self-reflection and wellness tracking)
 
 Place these files inside the `model` folder.
 
@@ -64,11 +65,12 @@ streamlit run app.py
 
 2. **Input Data**:
 
-Fill out the form with your general health and lifestyle details (e.g., age, exercise habits, smoking history, etc.).
+Fill out the form with your general mental health and lifestyle details (e.g., age, stressors, coping habits, mental health history, etc.).
 
 3. **Receive Feedback**:
 
-The app will predict your risk level for **diabetes**, **heart disease**, and **obesity** based on the data you provide. It will also offer personalized advice based on the risk level.
+MindWell will be open-source and customizable, aiming to bridge the gap between wellness and accessible tech.
+
 
 ## Folder Structure
 
@@ -90,9 +92,9 @@ The app will predict your risk level for **diabetes**, **heart disease**, and **
 ## Model Details
 
 - **label_encoders.pkl**: Used to encode categorical data.
-- **lr_dt.pkl**: Logistic Regression model for predicting the risk of diabetes.
-- **lr_ht.pkl**: Logistic Regression model for predicting heart disease risk.
-- **lr_ob.pkl**: Logistic Regression model for obesity risk.
+- **lr_dt.pkl**: Logistic Regression model for predicting the risk of academic and social pressures.
+- **lr_ht.pkl**: Logistic Regression model for better understanding of emotions.
+- **lr_ob.pkl**: Logistic Regression model for self-reflection and wellness tracking.
 
 ## Acknowledgments
 
@@ -103,4 +105,4 @@ _will be adding two models, XGBoost and Naive Bayes, to the analysis of the diab
 focusing on developing a predictive healthcare system using machine learning and AI.
 >Sprint 2
 In this update to the Jupyter Notebook, the heart disease dataset analysis, I integrated two new models, the Gradient Boosting Classifier and the XGBoost Classifier, to enhance the dataset's predictive analysis. These models were trained on the resampled and scaled data, followed by evaluation metrics to compare their performance against previously implemented classifiers.
-I created an app to predict the risk of diabetes: Diabetes Risk Calculator.
+The app is designed to be both a therapeutic companion and a data-driven tool to help users understand emotional patterns over time.
