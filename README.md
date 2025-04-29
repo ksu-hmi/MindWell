@@ -76,7 +76,7 @@ MindWell will be open-source and customizable, aiming to bridge the gap between 
 
 ```
 ├── images
-│   ├── healthcare.webp
+│   ├── MH1pic.jpeg
 ├── model
 │   ├── label_encoders.pkl
 │   ├── lr_dt.pkl
